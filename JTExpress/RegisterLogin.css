@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400&family=Inter:wght@200&display=swap');
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Comfortaa';
   }
   
   header {
@@ -13,12 +15,8 @@
   }
   
   header nav ul a img {
-    padding: 0px 15px 40px 0px;
+    padding: 0px 10px 20px 0px;
     margin-top: -5px;
-  }
-  
-  #hamburger {
-    margin-top: -10px;
   }
   
   #logo,
@@ -28,26 +26,41 @@
   
   header img {
     float: left;
-    padding-left: 70px;
+    padding-left: 110px;
   }
   
   header nav ul {
     float: right;
     margin-top: -10px;
-    padding: 58px 70px 0px 0px;
+    padding: 58px 0px 100px 0px;
   }
   
   header nav ul a {
     text-decoration: none;
     color: white;
     font-weight: bolder;
+    padding-right: 100px;
   }
-
-  header nav ul a:hover{
-    color: rgb(65, 59, 59);
-  transition: 0.5s;
+  header nav ul:hover{
+    padding-top: 50px;
   }
-
+  /*responsioive navbar*/
+  @media(min-width: 1190px){
+    .navigation .title-side{
+      display: none;
+    }
+  }
+  @media(max-width: 1280px){
+    #logo{
+      padding-left: 40px;
+    }
+  }
+  @media (max-width: 1190px){
+    nav ul a{
+      display: none;
+    }
+  }
+  
   .container {
     padding-top: 110px;
     position: relative;
@@ -287,4 +300,118 @@
 
 .footer p {
   color: #c1121f;
+}
+
+/*SideBar*/
+.navigation{
+  position: fixed;
+  top: 115px;
+  right: -80px;
+  bottom: 0;
+  background: #c1121f;
+  width: 80px;
+  border-left: 15px solid #c1121f;
+  border-radius: 50px;
+  overflow: hidden;
+  box-shadow: 15px 15px 25px rgba(0,0,0,0.05);
+  transition: 0.5s;
+  z-index: 9999;
+}
+.navigation ul li a span{
+  z-index: 9999;
+}
+.navigation.active{
+  width: 300px;
+  border-radius: 20px;
+}
+.toggle{
+  position: fixed;
+  top: 30px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background: white;
+  border-radius: 50%;
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.15);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.toggle::before{
+  content: '';
+  position: absolute;
+  width: 26px;
+  height: 3px;
+  border-radius: 3px;
+  background: #365fa1;
+  transform: translateY(-5px);
+  transition: 1s;
+}
+.toggle::after{
+  content: '';
+  position: absolute;
+  width: 26px;
+  height: 3px;
+  border-radius: 3px;
+  background: #365fa1;
+  transform: translateY(5px);
+  transition: 1s;
+  }
+.navigation.active .toggle::before{
+  transform: translateY(0px) rotate(-405deg);
+}
+.navigation.active .toggle::after{
+  transform: translateY(0px) rotate(225deg);
+}
+.navigation ul{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.navigation ul li{
+  position: relative;
+  list-style: none;
+  width: 100%;
+  border-top-left-radius: 30px ;
+  border-bottom-left-radius: 30px ;
+}
+.navigation ul li:hover{
+  background: red;
+  border-color: white;
+}
+.navigation ul li:nth-child(5){
+  left: 35px;
+  top: 20px;
+  font-weight: bold;
+  margin-bottom: 56px;
+  background: none;
+  color: white;
+}
+.navigation ul li a{
+  position: relative;
+  display: block;
+  width: 100%;
+  display: flex;
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: white;
+}
+/* .navigation ul li:hover:not(li:nth-child(5)){
+  color: white;
+} */
+
+.navigation ul li a .icon{
+  position: relative;
+  display: block;
+  min-height: 10px;
+  height: 10px;
+  line-height: 20px;
+  text-align: center;
+}
+.navigation ul li a .icon .fa-solid{
+  font-size: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
 }

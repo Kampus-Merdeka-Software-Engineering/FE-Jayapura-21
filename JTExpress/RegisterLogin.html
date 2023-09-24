@@ -5,18 +5,84 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JTExpress - Your Express Delivery Service</title>
     <link rel="stylesheet" href="RegisterLogin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
 </head>
 <body>
     <header>
         <img id="logo" src="assets/Logo-JTExpress.png" alt="Logo-JTExpress">
         <nav>
-            <ul><a href="#"> <img id="hamburger" src="assets/Hamburger.png" alt=""></a></ul>
             <ul><a href="RegisterLogin.html"> <img src="assets/LogOut.png" alt=""> LOGIN/REGISTER</a></ul>
-            <ul><a href="#"> <img src="assets/AboutUs.png" alt=""> ABOUT US</a></ul>
+            <ul><a href="about.html"> <img src="assets/AboutUs.png" alt=""> ABOUT US</a></ul>
             <ul><a href="#"> <img src="assets/Services.png" alt=""> SERVICES</a></ul>
-            <ul><a href="index.html"> <img src="assets/home.png" alt=""> HOME</a></ul>
+            <ul><a href="index.html#"> <img src="assets/home.png" alt=""> HOME</a></ul>
         </nav>
     </header>
+       <!--SideBar (Start)-->
+       <div class="navigation">
+        <ul>
+
+            <li>
+                <a href="#">
+                    <span class="icon-side"></span>
+                    <span class="title-side">Home</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon-side"></span>
+                    <span class="title-side">Service</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon-side"></span>
+                    <span class="title-side">About Us</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon-side"></span>
+                    <span class="title-side">Login/Register</span>
+                </a>
+            </li>
+            
+
+            <li>
+                <a href="#">
+                    <span class="icon"></span>
+                    <span class="title">Check Your Package</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon"><i class="fa-solid fa-circle-dot"></i></span>
+                    <span class="title">Tracking</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon"><i class="fa-solid fa-circle-dot"></i></span>
+                    <span class="title">Shipping rate</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon"><i class="fa-solid fa-circle-dot"></i></span>
+                    <span class="title">Drop Poin</span>
+                </a>
+            </li>
+            <li>
+                <a href="contactMassage.html">
+                    <span class="icon"><i class ="fa-solid fa-circle-dot"></i></span>
+                    <span class="title">Contact Us</span>
+                </a>
+            </li>
+        </ul>
+        <div class="toggle"></div>
+    </div>
+    </div>
+    <!--SideBar (Finish)-->
+
     <div class="container">
         <div class="back-img">
         <div class="wrapper">
@@ -133,5 +199,13 @@
         <p>Copyright © 2023 PT. Jasa Transparan Express. All Rights Reserved</p>
         <img src="assets/Logo-JTE.png" alt="">
     </div>
+    <script>
+    //Side Bar
+        let navigation = document.querySelector('.navigation');
+        let toggle = document.querySelector('.toggle');
+        toggle.onclick = function(){
+            navigation.classList.toggle('active');
+        }
+      </script>
 </body>
 </html>

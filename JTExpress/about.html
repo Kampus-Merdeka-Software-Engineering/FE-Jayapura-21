@@ -82,23 +82,34 @@
     </div>
     </div>
     <!--SideBar (Finish)-->
-    <div class="container-us">
-            <form>
-                <h1>Contact Us</h1>
-                <input name="name" type="text" placeholder="Your Name">
-                <input name="email" type="email" placeholder="Email">
-                <textarea name="massage" placeholder="Your Massage" rows="Your Message"></textarea>
-                <button type="submit" onclick="myButton()">Send</button>
-            </form>
+    <div class="about-us">
+        <div class="sejarah">
+            <h1>Sejarah</h1>
+            <br>
+            <p>
+                Berdiri pada tanggal 1 September 2023 sebagai PT. Jasa Transparan Express yang melahirkan produk berbentuk jasa antar barang maupun dokumen.
+            Lahirya Jejak Transparan Exspress (JTE) diawali dari keinginan sekelompok orang untuk bisa mendapatkan nilai terbaik dalam <i>Capstone Project</i> pada Program Studen Independen Kampus Merdeka.
+            <br>PT.Jasa Transparan Express bersama bisnis partner PT.Revolusi Cita Edukasi(RevoU) ingin menghadirkan Sumber Daya Manusia (SDM) dan jasa antar yang bisa menjadi pilihan utama & terpercaya masyarakat Indonesia karena kepastian & keamanan yang menjadi utama.</p>
         </div>
+        <div class="vm">
+            <div class=" visi">
+                <h1>VISI</h1>
+                <br>
+                <p>Menjadi perusahaan sekaligus keluarga bagi masyarakat Indonesia yang terpercaya dalam proses pengiriman kesegala penjuru dunia</p>
+            </div>
+            <div class="misi">
+                <h1>MISI</h1>
+                <br>
+                <ul>
+                    <li>Menjadi jasa antar pilihan dan andalan masyarakat Indonesia</li>
+                    <li>Memberikan pengalaman terbaik untuk tiap kalangan masyarakat dalam antar barang</li>
+                    <li>Menjadi jasa antar yang terpercaya dan aman</li>
+                </ul>
+            </div>
     </div>
     <script>
-        function myButton(){
-            alert ("Pesan telah terkirim, mohon tunggu beberapa saat ya ^^");
-        }
-
-          //Side Bar
-          let navigation = document.querySelector('.navigation');
+            //Side Bar
+            let navigation = document.querySelector('.navigation');
         let toggle = document.querySelector('.toggle');
         toggle.onclick = function(){
             navigation.classList.toggle('active');
