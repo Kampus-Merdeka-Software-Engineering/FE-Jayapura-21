@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400&family=Inter:wght@200&display=swap');
+
+:root{
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -126,6 +131,12 @@ header nav ul:hover{
   height: 60px;
   width: 200px;
   border-radius: 10px;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Transisi untuk perubahan latar belakang dan warna teks */
+}
+
+.excess button:hover {
+  background-color: #e2e2e2; /* Mengubah warna latar belakang saat hover */
+  color: white; /* Mengubah warna teks saat hover */
 }
 
 .container-card {
@@ -138,10 +149,14 @@ header nav ul:hover{
 
 .card {
   width: 300px;
-  height: 340px;
+  height: 380px;
   background-color: white;
   border-radius: 10px;
-  padding: 30px;
+  transition: box-shadow 0.5s ease; /* Transisi untuk efek bayangan */
+}
+
+.card:hover {
+  box-shadow: 0px 0px 20px rgb(255, 255, 255); /* Menambahkan bayangan saat hover */
 }
 
 .card h3 {
@@ -162,7 +177,7 @@ header nav ul:hover{
 .footer-alamat {
   display: flex;
   flex-direction: row;
-  gap: 30px;
+  gap: 70px;
   color: white;
 }
 
@@ -171,6 +186,23 @@ header nav ul:hover{
 }
 
 .tentangJTE,
+
+P{
+  line-height: 20px;
+}
+
+.JteProf {
+  text-decoration: none; /* Menghilangkan underline */
+  color: #ffffff; /* Warna teks normal */
+  transition: color 0.3s ease; /* Transisi perubahan warna teks */
+}
+
+.JteProf:hover {
+  color: black; /* Warna teks saat hover */
+}
+
+
+
 .services {
   width: 20%;
 }
