@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JTExpress - Your Express Delivery Service</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img id="logo" src="assets/Logo-JTExpress.png" alt="Logo-JTExpress">
+        <nav>
+            <ul><a href="#"> <img id="hamburger" src="assets/Hamburger.png" alt=""></a></ul>
+            <ul><a href="#"> <img src="assets/LogOut.png" alt=""> LOGIN/REGISTER</a></ul>
+            <ul><a href="#"> <img src="assets/AboutUs.png" alt=""> ABOUT US</a></ul>
+            <ul><a href="#"> <img src="assets/Services.png" alt=""> SERVICES</a></ul>
+            <ul><a href="#"> <img src="assets/home.png" alt=""> HOME</a></ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="slider">
+            <img src="assets/Slider-1.jpg" alt="">
+            <img src="assets/Slider-2.jpg" alt="">
+            <img src="assets/Slider-3.jpg" alt="">
+            <img src="assets/Slider-4.jpg" alt="">
+            <img src="assets/Slider-5.jpg" alt="">
+        </div>
+    </div>
+    
+    <div class="break"></div>
+    <div class="excess">
+        <h1 class="rainbow-heading">
+            <span>TEMUKAN</span>
+            <span>KAMI</span>
+            <span>DI</span>
+            <span>SEKITAR</span>
+            <span>ANDA!</span>
+        </h1>
+    </div>
+
+    <br>
+    <br>
+    <div class="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.346504635427!2d106.81372920000001!3d-6.2179547!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f1ac8d9a742f%3A0xf9ef29e3d6d355a8!2sJTE%20Express!5e0!3m2!1sid!2sid!4v1695685418337!5m2!1sid!2sid"> </iframe> 
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <form action="/search" method="GET" class="search-form">
+        <input type="text" name="query" placeholder="Please select area (city, district, or sub-district)...">
+        <button type="submit">Search</button>
+    </form>
+<br>
+<br>
+<br>
+<img id="footerimg" src="assets/footer.png"
+<br>
+    <div class="content">
+        
+        <div class="about">
+        <img src="assets/Logo-JTExpress.png" alt="">
+        <div class="footer-alamat">
+            <div class="kantorPusat">
+                <h3>KANTOR PUSAT</h3>
+                <br>
+                <p>PT. Jasa Transparan Express</p>
+                <p>Jl. Sudirman No. 11 Jakarta Pusat 12920 Indonesia</p>
+                <p>Contact center. 089513891995</p>
+                <p>Office. (62-21) XXXXX</p>
+                <p>Fax. (62-21) XXXXXX</p>
+                <p>Email. customercare@jte.co.id</p>
+            </div>
+            <div class="tentangJTE">
+                <h3>Tentang JTE</h3>
+                <br>
+                <p>Profil Perusahaan</p>
+                <p>FAQ</p>
+            </div>
+            <div class="services">
+                <h3>Service</h3>
+                <br>
+                <p>Hubungi Kami</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>Copyright © 2023 PT. Jasa Transparan Express. All Rights Reserved</p>
+        <img src="assets/Logo-JTE.png" alt="">
+    </div>
+    
+
+    <script>  
+        const slider = document.querySelector('.slider');
+        let slideIndex = 1;
+        function showSlide(index) {
+          slider.style.transform = `translateX(-${(index - 1) * 20}%)`;
+        }
+        function nextSlide() {
+          slideIndex = (slideIndex % 5) + 1;
+          showSlide(slideIndex);
+        }
+        setInterval(nextSlide, 3000); // Ganti slide setiap 3 detik
+      </script>
+</body>
+</html>
+
