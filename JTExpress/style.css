@@ -51,9 +51,14 @@ header nav ul a {
 header nav ul:hover{
   padding-top: 50px;
 }
-/*responsioive navbar*/
+
+/*responsive navbar*/
 @media(min-width: 1190px){
   .navigation .title-side{
+    display: none;
+
+  }
+  .navigation ul li a .icon-side i{
     display: none;
   }
 }
@@ -61,6 +66,7 @@ header nav ul:hover{
   #logo{
     padding-left: 40px;
   }
+
 }
 @media (max-width: 1190px){
   nav ul a{
@@ -120,28 +126,13 @@ header nav ul:hover{
 
 .excess h1 {
   color: white;
-  padding: 20px 0px 30px 0px;
+  padding: 20px 0px 10px 0px;
   font-size: 60px;
-}
-
-.excess button {
-  background-color: white;
-  color: black;
-  font-weight: bold;
-  height: 60px;
-  width: 200px;
-  border-radius: 10px;
-  transition: background-color 0.3s ease, color 0.3s ease; /* Transisi untuk perubahan latar belakang dan warna teks */
-}
-
-.excess button:hover {
-  background-color: #e2e2e2; /* Mengubah warna latar belakang saat hover */
-  color: white; /* Mengubah warna teks saat hover */
 }
 
 .container-card {
   display: flex;
-  margin-top: 30px;
+  margin-top: 5px;
   flex-direction: row;
   gap: 40px;
   justify-content: center;
@@ -200,8 +191,6 @@ P{
 .JteProf:hover {
   color: black; /* Warna teks saat hover */
 }
-
-
 
 .services {
   width: 20%;
@@ -317,10 +306,30 @@ P{
   border-top-left-radius: 30px ;
   border-bottom-left-radius: 30px ;
 }
+@media (max-width: 1190px){
+  .navigation ul{
+    top: 20px;
+  }
+  .navigation ul li a .icon-side{
+    position: relative;
+    display: block;
+    min-height: 10px;
+    height: 10px;
+    line-height: 20px;
+    text-align: center;
+  }
+  .navigation ul li a .icon-side .fa-solid{
+    font-size: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
 .navigation ul li:hover{
   background: red;
   border-color: white;
 }
+
 .navigation ul li:nth-child(5){
   left: 35px;
   top: 20px;
@@ -338,9 +347,11 @@ P{
   text-decoration: none;
   color: white;
 }
+
 /* .navigation ul li:hover:not(li:nth-child(5)){
   color: white;
 } */
+
 .navigation ul li a .icon{
   position: relative;
   display: block;
@@ -374,6 +385,21 @@ form{
   width: 10cm;
   max-width: 600px;
   border-radius: 30px;
+}
+@media(max-width: 878px){
+  form{
+    margin: 5cm 3cm 0 0;
+  }
+}
+@media(max-width: 695px){
+  form{
+    margin: 5cm 4cm 0 0;
+  }
+}
+@media(max-width: 500px){
+  form{
+    margin: 5cm 5.5cm 0 0;
+  }
 }
 
 form h1{

@@ -44,22 +44,27 @@
   header nav ul:hover{
     padding-top: 50px;
   }
-  /*responsioive navbar*/
-  @media(min-width: 1190px){
-    .navigation .title-side{
-      display: none;
-    }
+  /*responsive navbar*/
+@media(min-width: 1190px){
+  .navigation .title-side{
+    display: none;
+
   }
-  @media(max-width: 1280px){
-    #logo{
-      padding-left: 40px;
-    }
+  .navigation ul li a .icon-side i{
+    display: none;
   }
-  @media (max-width: 1190px){
-    nav ul a{
-      display: none;
-    }
+}
+@media(max-width: 1280px){
+  #logo{
+    padding-left: 40px;
   }
+
+}
+@media (max-width: 1190px){
+  nav ul a{
+    display: none;
+  }
+}
   
   .container {
     padding-top: 110px;
@@ -305,7 +310,7 @@
 /*SideBar*/
 .navigation{
   position: fixed;
-  top: 115px;
+  top: 110px;
   right: -80px;
   bottom: 0;
   background: #c1121f;
@@ -377,10 +382,30 @@
   border-top-left-radius: 30px ;
   border-bottom-left-radius: 30px ;
 }
+@media (max-width: 1190px){
+  .navigation ul{
+    top: 20px;
+  }
+  .navigation ul li a .icon-side{
+    position: relative;
+    display: block;
+    min-height: 10px;
+    height: 10px;
+    line-height: 20px;
+    text-align: center;
+  }
+  .navigation ul li a .icon-side .fa-solid{
+    font-size: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
 .navigation ul li:hover{
   background: red;
   border-color: white;
 }
+
 .navigation ul li:nth-child(5){
   left: 35px;
   top: 20px;
@@ -398,6 +423,7 @@
   text-decoration: none;
   color: white;
 }
+
 /* .navigation ul li:hover:not(li:nth-child(5)){
   color: white;
 } */
