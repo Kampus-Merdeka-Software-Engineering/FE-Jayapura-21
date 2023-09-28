@@ -524,3 +524,75 @@ form button:hover{
 box-shadow:  5px 5px 15px #a99fa0,  
             -5px -5px 15px #ffffff;     
 }
+
+/*tracking*/
+.container_tracking .img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 33px auto;
+  width: 50%; /* Lebar gambar 50% dari container */
+  height: auto; /* Tinggi gambar disesuaikan secara otomatis agar menjaga aspek rasio */
+}
+
+.container_tracking {
+  position: relative;
+  display: inline-block;
+}
+
+.container_tracking .text_overlay {
+  position: absolute;
+  top: 30%; /* Atur posisi teks di atas gambar */
+  left: 70%; /* Atur posisi teks dari sisi kiri gambar */
+  color: black; /* Warna teks */
+  padding: 5px 10px; /* Padding teks */
+  font-size: 40px; /* Ukuran teks */
+}
+
+.tracking_check{
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.tracking_check img{
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 70px;
+  width: 100%; /* Lebar gambar 50% dari container */
+  height: auto; /* Tinggi gambar disesuaikan secara otomatis agar menjaga aspek rasio */
+}
+
+.tracking_check input {
+  border: 0;
+  margin: 10px 0 10px;
+  padding: 10px;
+  outline: none;
+  background: #e2e2e2;
+  font-size: 16px;
+  border-radius: 0;
+  transition: all 0.5s;
+  width: 50%; 
+}
+
+.tracking_check button {
+  padding: 10px;
+  background: #c1121f;
+  color: white;
+  font-size: 16px;
+  border: 1px solid transparent;
+  outline: none;
+  cursor: pointer;
+  width: 15em;
+  margin: 1em auto 0.5em;
+  border-radius: 0;
+}
+
+.tracking_check button:hover{
+  background: #c1121f;
+  color:white ;
+  border-color: white;
+  font-weight: bolder;
+}
