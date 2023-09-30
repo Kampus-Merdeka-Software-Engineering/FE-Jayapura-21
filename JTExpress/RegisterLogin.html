@@ -11,7 +11,7 @@
     <header>
         <img id="logo" src="assets/Logo-JTExpress.png" alt="Logo-JTExpress">
         <nav>
-            <ul><a href="RegisterLogin.html"> <img src="assets/LogOut.png" alt=""> LOGIN/REGISTER</a></ul>
+            <ul><a href="tracking.html"> <img src="assets/LogOut.png" alt=""> Tracking</a></ul>
             <ul><a href="about.html"> <img src="assets/AboutUs.png" alt=""> Tentang Kami</a></ul>
             <ul><a href="input.html"> <img src="assets/Services.png" alt=""> Input Package</a></ul>
             <ul><a href="index.html"> <img src="assets/home.png" alt=""> HOME</a></ul>
@@ -40,9 +40,9 @@
                 </a>
             </li>
             <li>
-                <a href="RegisterLogin.html">
+                <a href="tracking.html">
                     <span class="icon-side"><i class="fa-solid fa-circle-dot"></i></span>
-                    <span class="title-side">Login/Register</span>
+                    <span class="title-side">Tracking</span>
                 </a>
             </li>
             
@@ -55,13 +55,13 @@
             </li>
 
             <li>
-                <a href="tracking.html">
+                <a href="RegisterLogin.html">
                     <span class="icon"><i class="fa-solid fa-circle-dot"></i></span>
-                    <span class="title">Tracking</span>
+                    <span class="title">Register/Login</span>
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="ShippingRate.html">
                     <span class="icon"><i class="fa-solid fa-circle-dot"></i></span>
                     <span class="title">Shipping rate</span>
                 </a>
@@ -168,7 +168,7 @@
         </div>
     </div>
 
-    <script src="RegisterLogin.js"></script>
+    <script src="JS/RegisterLogin.js"></script>
     <div class="break"></div>
     <div class="about">
         <img src="assets/Logo-JTExpress.png" alt="">
@@ -186,26 +186,24 @@
             <div class="tentangJTE">
                 <h3>Tentang JTE</h3>
                 <br>
-                <p>Profil Perusahaan</p>
+                <a class="JteProf" href="about.html"><p>Profil Perusahaan</p></a>
             </div>
             <div class="services">
                 <h3>Service</h3>
                 <br>
-                <p>Hubungi Kami</p>
+                <a class="JteProf" href="input.html"><p>Gunakan Jasa kami</p></a>
             </div>
+        </div>
+
+        <div class="sosmed">
+            <ul><a class="instagram" href="https://instagram.com/jntexpressid?igshid=MWZjMTM2ODFkZg=="><i class="fa-brands fa-instagram" ></i></a></ul>
+            <ul><a class="twitter" href="https://x.com/jntexpressid?t=BdwNem2nMUGWwSMB_shDXg&s=09"><i class="fa-brands fa-x-twitter"></i></a></ul>
+            <ul><a class="tiktok" href="https://www.tiktok.com/@jntexpressid?_t=8g712Esu9Oq&_r=1"><i class="fa-brands fa-tiktok"></i></a></ul>
         </div>
     </div>
     <div class="footer">
         <p>Copyright © 2023 PT. Jasa Transparan Express. All Rights Reserved</p>
         <img src="assets/Logo-JTE.png" alt="">
     </div>
-    <script>
-    //Side Bar
-        let navigation = document.querySelector('.navigation');
-        let toggle = document.querySelector('.toggle');
-        toggle.onclick = function(){
-            navigation.classList.toggle('active');
-        }
-      </script>
 </body>
 </html>

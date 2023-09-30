@@ -9,3 +9,10 @@ registerLink.addEventListener('click', ()=> {
 loginLink.addEventListener('click', ()=> {
     wrapper.classList.remove('active');
 });
+
+//Side Bar
+let navigation = document.querySelector('.navigation');
+let toggle = document.querySelector('.toggle');
+toggle.onclick = function(){
+    navigation.classList.toggle('active');
+}

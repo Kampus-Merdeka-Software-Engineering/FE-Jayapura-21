@@ -73,84 +73,8 @@ header nav ul:hover{
     display: none;
   }
 }
- /*footer*/
-.about {
-
-    background-color: #c1121f;
-    padding: 50px 80px;
-  }
-  
-  .about h3 {
-    font-weight: bolder;
-    margin-top: 20px;
-  }
-  
-  .footer-alamat {
-    display: flex;
-    flex-direction: row;
-    gap: 70px;
-    color: white;
-  }
-  
-  .kantorPusat {
-    width: 50%;
-  }
-  
-  .tentangJTE,
-  
-  P{
-    line-height: 20px;
-  }
-  
-  .JteProf {
-    text-decoration: none; /* Menghilangkan underline */
-    color: #ffffff; /* Warna teks normal */
-    transition: color 0.3s ease; /* Transisi perubahan warna teks */
-  }
-  
-  .JteProf:hover {
-    color: black; /* Warna teks saat hover */
-  }
-  
-  .services {
-    width: 20%;
-  }
-  
-  .sosmed ul{
-    float: right;
-    justify-content: space-between;
-    margin: -15px 10px 0;
-  }
-  
-  .sosmed ul a{
-    display: grid;
-    width: 40px;
-    height: 40px;
-    background-color: white;
-    color: #c1121f;
-    border-radius: 50%;
-    text-decoration: none;
-    align-items: center;
-    justify-content: center;
-    z-index: 2;
-    }
-  
-  .sosmed a:hover{
-    color: #000;
-  }
-  
-  .footer {
-    display: flex;
-    margin: 0px 50px;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .footer p {
-    color: #c1121f;
-  }
   /*SideBar*/
-.navigation{
+  .navigation{
     position: fixed;
     top: 115px;
     right: -65px;
@@ -284,86 +208,139 @@ header nav ul:hover{
     padding-right: 10px;
   }
   
-  
-  /*input*/
-  .container-us{
-    min-width: 100vh;
-    margin-bottom: 40px;
-    background-color: white;
-    display: flex;
-    align-items: center;
-    justify-content: right;
+ /*about us*/
+ .about-us{
+    background: white;
+    padding: 10px 10px 5px;
+    font-size: 20px;
   }
   
-  form{
-    margin: 5cm 2cm 0 0;
-    background-color: #c1121f;
-    display: flex;
-    flex-direction: column;
-    padding:  10px 15px 10px 15px;
-    width: 10cm;
-    max-width: 600px;
-    border-radius: 30px;
-  }
-  @media(max-width: 878px){
-    form{
-      margin: 5cm 3cm 0 0;
-    }
-  }
-  @media(max-width: 695px){
-    form{
-      margin: 5cm 4cm 0 0;
-    }
-  }
-  @media(max-width: 500px){
-    form{
-      margin: 5cm 5.5cm 0 0;
-    }
-  }
-  
-  form h1{
+  .about-us .sejarah{
+    position: relative;
+    top: 4cm;
+    left: 74px;
+    padding: 10px 110px 30px 110px;
+    text-align: center;
+    width: 90%;
+    height: auto;
     color: white;
-    font-weight: 800;
-    font-size: 1.7em;
-    padding: 5px;
-    margin-bottom: 15px;
+    border-radius: 66px;
+    /* background: linear-gradient(145deg, #f5e6e7, #cec2c2); */
+    background: linear-gradient(225deg, #cf1321, #ae101c);
+    /* box-shadow:  -5px 5px 15px #8f0d17,
+                5px -5px 15px #f31727; */
+  }
+  .about-us .sejarah h1{
+    margin-top: 10px;
+    font-size: 45px;
     text-align: center;
   }
-  
-  form input, textarea{
-    border: 0;
-    margin: 10px 0 0;
-    padding: 20px;
-    outline: none;
-    background: #e2e2e2;
-    font-size: 16px;
-    border-radius: 1em;
-    transition: all 0.5s;
-  }
-  
-  form input:focus, form textarea:focus{ 
-    background: white
-  }
-  form textarea{
-    resize: none;
-  }
-  form button{
-    padding: 0.8em ;
-    background: white;
-    color: #c1121f;
-    font-size: 1.2em;
-    border: 1;
-    border-color: transparent;
-    outline:none;
-    cursor: pointer;
-    width: 10em;
-    margin: 1em auto 0.5em;
-    border-radius: 2em;
-  }
-  form button:hover{
-    background: #c1121f;
-    color:white ;
-    border-color: white;
+  .about-us .sejarah i{
     font-weight: bolder;
   }
+  .about-us .sejarah:hover{
+    /* color: #000; */
+    border-radius: 66px;
+    /* background: linear-gradient(145deg, #f5e6e7, #cec2c2); */
+    box-shadow:  5px 5px 15px #a99fa0,
+                -5px -5px 15px #ffffff;
+  }
+  .about-us .vm .visi{
+    position: relative;
+    padding: 1cm 90px 40px 90px;
+    text-align: center;
+    margin: 0 50px 0 50px;
+  }
+  
+  .about-us .vm .visi h1{
+    text-align: center;
+    font-size: 45px;
+  }
+  
+  .about-us .vm .misi{
+    padding: 2px 20px;
+    margin: 0 50px 0 50px;
+    padding: 0 110px 10px 90px;
+  }
+  .about-us .vm .misi h1{
+    font-size: 45px;
+    text-align: center;
+  }
+  .about-us .vm{
+    top: 5cm;
+    left: 75px;
+    width: 90%;
+    height: 12cm;
+    position: relative;
+    border-radius: 66px;
+    background: linear-gradient(145deg, #f5e6e7, #cec2c2);
+    /* box-shadow:  5px 5px 15px #a99fa0,
+                -5px -5px 15px #ffffff; */
+  }
+  .about-us .vm:hover{
+  /* background: linear-gradient(225deg, #cf1321, #ae101c); */
+  /* box-shadow:  -5px 5px 15px #8f0d17,
+                5px -5px 15px #f31727; */
+  box-shadow:  5px 5px 15px #a99fa0,  
+              -5px -5px 15px #ffffff;     
+  }
+
+  .about-us .profile{
+    margin-top: 25px;
+    margin-bottom: 30px;
+    top: 5cm;
+    left: 75px;
+    width: 90%;
+    height: auto;
+    justify-content: center;
+    position: relative;
+    border-radius: 66px;
+    background: linear-gradient(145deg, #cf1321, #ae101c);
+    padding-top: 10px;
+  }
+
+  .about-us .profile h1{
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 0.5cm;
+    margin-top: 0.5cm;
+  }
+
+  .profile .cards {
+    margin: 7%;
+  }
+
+ .about-us .profile .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    margin-top: 5px;
+    flex-direction: column;
+    gap: 66px;
+    justify-content: center;
+    margin-bottom: 5px;
+  }
+  .about-us .profile .cards .card {
+    width: 250px;
+    height: 270px;
+    text-align: center;
+    justify-content: center;
+    background-color: #ffffff;
+    border-radius: 10px;
+    margin-bottom: 1cm;
+    transition: box-shadow 0.5s ease; /* Transisi untuk efek bayangan */
+  }
+  
+  .card:hover {
+    box-shadow: 0px 0px 20px rgb(255, 255, 255); /* Menambahkan bayangan saat hover */
+  }
+  
+  .card h3 {
+   font-weight: bolder;
+    padding: 20px 0px 20px 0px;
+  }
+
+  .card a {
+    font-size: 0.4cm;
+  }
+
   

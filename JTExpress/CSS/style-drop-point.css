@@ -73,6 +73,226 @@ header nav ul:hover{
     display: none;
   }
 }
+
+.container {
+  padding-top: 110px;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 800px;
+}
+
+.container img {
+  width: 100%;
+  height: 800px;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 500%;
+}
+
+.slider img {
+  width: 100%;
+  height: auto;
+}
+
+.slider.slide-1 {
+  transform: translateX(0);
+}
+.slider.slide-2 {
+  transform: translateX(-20%);
+}
+.slider.slide-3 {
+  transform: translateX(-40%);
+}
+.slider.slide-4 {
+  transform: translateX(-60%);
+}
+.slider.slide-5 {
+  transform: translateX(-80%);
+}
+
+
+.break {
+  height: 80px;
+}
+
+.excess h1 {
+  text-align: center;
+}
+
+    .rainbow-heading span:nth-child(1) {
+        color: red;
+    }
+    .rainbow-heading span:nth-child(2) {
+        color: black;
+    }
+    .rainbow-heading span:nth-child(3) {
+        color: red;
+    }
+
+    .rainbow-heading span:nth-child(4) {
+        color: red;
+    }
+    .rainbow-heading span:nth-child(5) {
+        color: black;
+    }
+
+@font-face{
+    font-family: knewave;
+    src: url('knewave.ttf')
+  }
+  h1 {
+    font-family: knewave;
+    padding: 10px 0px 0px 0px;
+    font-size: 100px;
+  }
+
+.map-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  height: 30vh;
+}
+
+iframe {
+  width: 80%;
+  height: 30vh;
+  border: none;
+}
+
+form {
+  margin-right: 2cm;
+  margin-left: 2cm;
+}
+  .search-form {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type="text"] {
+    padding: 20px;
+    width: 1300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 30px;
+    margin-right: 50px;
+}
+
+button {
+    padding: 20px 20px;
+    background-color: #e31212;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #801d1d;
+}
+
+#footerimg {
+  width: 100%;
+  height: 600px;
+  display: block;
+  margin: auto;
+}
+
+.card {
+  width: 300px;
+  height: 340px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 30px;
+}
+
+.card h3 {
+  color: #c1121f;
+  padding: 20px 0px 20px 0px;
+}
+
+.about {
+  background-color: #c1121f;
+  padding: 50px 80px;
+}
+
+.about h3 {
+  font-weight: bolder;
+  margin-top: 20px;
+}
+
+.footer-alamat {
+  display: flex;
+  flex-direction: row;
+  gap: 70px;
+  color: white;
+}
+
+.kantorPusat {
+  width: 50%;
+}
+
+.tentangJTE,
+
+P{
+  line-height: 20px;
+}
+
+.JteProf {
+  text-decoration: none; /* Menghilangkan underline */
+  color: #ffffff; /* Warna teks normal */
+  transition: color 0.3s ease; /* Transisi perubahan warna teks */
+}
+
+.JteProf:hover {
+  color: black; /* Warna teks saat hover */
+}
+
+.services {
+  width: 20%;
+}
+
+.sosmed ul{
+  float: right;
+  justify-content: space-between;
+  margin: -15px 10px 0;
+}
+
+.sosmed ul a{
+  display: grid;
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  color: #c1121f;
+  border-radius: 50%;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  }
+
+.sosmed a:hover{
+  color: #000;
+}
+
+.footer {
+  display: flex;
+  margin: 0px 50px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer p {
+  color: #c1121f;
+}
+
   /*SideBar*/
   .navigation{
     position: fixed;
@@ -207,115 +427,4 @@ header nav ul:hover{
     padding-left: 10px;
     padding-right: 10px;
   }
-  
- /*about us*/
- .about-us{
-    background: white;
-    padding: 10px 10px 5px;
-    font-size: 20px;
-  }
-  
-  .about-us .sejarah{
-    position: relative;
-    top: 4cm;
-    left: 74px;
-    padding: 10px 110px 30px 110px;
-    text-align: center;
-    width: 90%;
-    height: auto;
-    color: white;
-    border-radius: 66px;
-    /* background: linear-gradient(145deg, #f5e6e7, #cec2c2); */
-    background: linear-gradient(225deg, #cf1321, #ae101c);
-    /* box-shadow:  -5px 5px 15px #8f0d17,
-                5px -5px 15px #f31727; */
-  }
-  .about-us .sejarah h1{
-    margin-top: 10px;
-    font-size: 45px;
-    text-align: center;
-  }
-  .about-us .sejarah i{
-    font-weight: bolder;
-  }
-  .about-us .sejarah:hover{
-    /* color: #000; */
-    border-radius: 66px;
-    /* background: linear-gradient(145deg, #f5e6e7, #cec2c2); */
-    box-shadow:  5px 5px 15px #a99fa0,
-                -5px -5px 15px #ffffff;
-  }
-  .about-us .vm .visi{
-    position: relative;
-    padding: 1cm 90px 40px 90px;
-    text-align: center;
-    margin: 0 50px 0 50px;
-  }
-  
-  .about-us .vm .visi h1{
-    text-align: center;
-    font-size: 45px;
-  }
-  
-  .about-us .vm .misi{
-    padding: 2px 20px;
-    margin: 0 50px 0 50px;
-    padding: 0 110px 10px 90px;
-  }
-  .about-us .vm .misi h1{
-    font-size: 45px;
-    text-align: center;
-  }
-  .about-us .vm{
-    top: 5cm;
-    left: 75px;
-    width: 90%;
-    height: 12cm;
-    position: relative;
-    border-radius: 66px;
-    background: linear-gradient(145deg, #f5e6e7, #cec2c2);
-    /* box-shadow:  5px 5px 15px #a99fa0,
-                -5px -5px 15px #ffffff; */
-  }
-  .about-us .vm:hover{
-  /* background: linear-gradient(225deg, #cf1321, #ae101c); */
-  /* box-shadow:  -5px 5px 15px #8f0d17,
-                5px -5px 15px #f31727; */
-  box-shadow:  5px 5px 15px #a99fa0,  
-              -5px -5px 15px #ffffff;     
-  }
 
-  .about-us .profile{
-    top: 5cm;
-    left: 75px;
-    width: 90%;
-    height: auto;
-    position: relative;
-    border-radius: 66px;
-    background: linear-gradient(145deg, #f5e6e7, #cec2c2);
-    padding-top: 10px;
-    
-  }
-  .about-us .profile h1{
-    text-align: center;
-  }
-  .cards {
-    display: flex;
-    margin-top: 5px;
-    flex-direction: column;
-    gap: 40px;
-    justify-content: center;
-  }
-  .cards .card1 {
-    width: 300px;
-    height: 380px;
-    text-align: center;
-    background-color: gray;
-    border-radius: 10px;
-    transition: box-shadow 0.5s ease; /* Transisi untuk efek bayangan */
-  }
-  
-  .card:hover {
-    box-shadow: 0px 0px 20px rgb(255, 255, 255); /* Menambahkan bayangan saat hover */
-  }
-  

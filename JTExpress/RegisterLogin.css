@@ -225,6 +225,11 @@
     font-weight: 500;
   }
 
+  .btn:hover {
+    border-color: white;
+    font-weight: bolder;
+  }
+
   .login-register {
     font-size: .9em;
     color: black;
@@ -260,7 +265,7 @@
 .footer-alamat {
   display: flex;
   flex-direction: row;
-  gap: 30px;
+  gap: 70px;
   color: white;
 }
 
@@ -269,6 +274,21 @@
 }
 
 .tentangJTE,
+
+P{
+  line-height: 20px;
+}
+
+.JteProf {
+  text-decoration: none; /* Menghilangkan underline */
+  color: #ffffff; /* Warna teks normal */
+  transition: color 0.3s ease; /* Transisi perubahan warna teks */
+}
+
+.JteProf:hover {
+  color: black; /* Warna teks saat hover */
+}
+
 .services {
   width: 20%;
 }
