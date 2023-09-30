@@ -73,165 +73,84 @@ header nav ul:hover{
     display: none;
   }
 }
-
-.container {
-  padding-top: 110px;
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  height: 800px;
-}
-
-.container img {
-  width: 100%;
-  height: 800px;
-}
-
-.slider {
-  display: flex;
-  transition: transform 0.5s ease-in-out;
-  width: 500%;
-}
-
-.slider img {
-  width: 100%;
-  height: auto;
-}
-
-.slider.slide-1 {
-  transform: translateX(0);
-}
-.slider.slide-2 {
-  transform: translateX(-20%);
-}
-.slider.slide-3 {
-  transform: translateX(-40%);
-}
-.slider.slide-4 {
-  transform: translateX(-60%);
-}
-.slider.slide-5 {
-  transform: translateX(-80%);
-}
-
-.break {
-  height: 80px;
-}
-
-.excess {
-  background-image: url(assets/background-bawah.png);
-  height: 640px;
-  text-align: center;
-}
-
-.excess h1 {
-  color: white;
-  padding: 20px 0px 10px 0px;
-  font-size: 60px;
-}
-
-.container-card {
-  display: flex;
-  margin-top: 5px;
-  flex-direction: row;
-  gap: 40px;
-  justify-content: center;
-}
-
-.card {
-  width: 300px;
-  height: 380px;
-  background-color: white;
-  border-radius: 10px;
-  transition: box-shadow 0.5s ease; /* Transisi untuk efek bayangan */
-}
-
-.card:hover {
-  box-shadow: 0px 0px 20px rgb(255, 255, 255); /* Menambahkan bayangan saat hover */
-}
-
-.card h3 {
-  color: #c1121f;
-  padding: 20px 0px 20px 0px;
-}
-
+ /*footer*/
 .about {
-  background-color: #c1121f;
-  padding: 50px 80px;
-}
 
-.about h3 {
-  font-weight: bolder;
-  margin-top: 20px;
-}
-
-.footer-alamat {
-  display: flex;
-  flex-direction: row;
-  gap: 70px;
-  color: white;
-}
-
-.kantorPusat {
-  width: 50%;
-}
-
-.tentangJTE,
-
-P{
-  line-height: 20px;
-}
-
-.JteProf {
-  text-decoration: none; /* Menghilangkan underline */
-  color: #ffffff; /* Warna teks normal */
-  transition: color 0.3s ease; /* Transisi perubahan warna teks */
-}
-
-.JteProf:hover {
-  color: black; /* Warna teks saat hover */
-}
-
-.services {
-  width: 20%;
-}
-
-.sosmed ul{
-  float: right;
-  justify-content: space-between;
-  margin: -15px 10px 0;
-}
-
-.sosmed ul a{
-  display: grid;
-  width: 40px;
-  height: 40px;
-  background-color: white;
-  color: #c1121f;
-  border-radius: 50%;
-  text-decoration: none;
-  align-items: center;
-  justify-content: center;
-  z-index: 2;
+    background-color: #c1121f;
+    padding: 50px 80px;
   }
-
-.sosmed a:hover{
-  color: #000;
-}
-
-.footer {
-  display: flex;
-  margin: 0px 50px;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.footer p {
-  color: #c1121f;
-}
-
+  
+  .about h3 {
+    font-weight: bolder;
+    margin-top: 20px;
+  }
+  
+  .footer-alamat {
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+    color: white;
+  }
+  
+  .kantorPusat {
+    width: 50%;
+  }
+  
+  .tentangJTE,
+  
+  P{
+    line-height: 20px;
+  }
+  
+  .JteProf {
+    text-decoration: none; /* Menghilangkan underline */
+    color: #ffffff; /* Warna teks normal */
+    transition: color 0.3s ease; /* Transisi perubahan warna teks */
+  }
+  
+  .JteProf:hover {
+    color: black; /* Warna teks saat hover */
+  }
+  
+  .services {
+    width: 20%;
+  }
+  
+  .sosmed ul{
+    float: right;
+    justify-content: space-between;
+    margin: -15px 10px 0;
+  }
+  
+  .sosmed ul a{
+    display: grid;
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    color: #c1121f;
+    border-radius: 50%;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    }
+  
+  .sosmed a:hover{
+    color: #000;
+  }
+  
+  .footer {
+    display: flex;
+    margin: 0px 50px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer p {
+    color: #c1121f;
+  }
   /*SideBar*/
-  .navigation{
+.navigation{
     position: fixed;
     top: 115px;
     right: -65px;
@@ -364,76 +283,87 @@ P{
     padding-left: 10px;
     padding-right: 10px;
   }
-  /*tracking*/
-  .container_tracking .img {
+  
+  
+  /*input*/
+  .container-us{
+    min-width: 100vh;
+    margin-bottom: 40px;
+    background-color: white;
     display: flex;
-    justify-content: center;
     align-items: center;
-    margin-top: 33px auto;
-    width: 50%; /* Lebar gambar 50% dari container */
-    height: auto; /* Tinggi gambar disesuaikan secara otomatis agar menjaga aspek rasio */
+    justify-content: right;
   }
   
-  .container_tracking {
-    position: relative;
-    display: inline-block;
+  form{
+    margin: 5cm 2cm 0 0;
+    background-color: #c1121f;
+    display: flex;
+    flex-direction: column;
+    padding:  10px 15px 10px 15px;
+    width: 10cm;
+    max-width: 600px;
+    border-radius: 30px;
+  }
+  @media(max-width: 878px){
+    form{
+      margin: 5cm 3cm 0 0;
+    }
+  }
+  @media(max-width: 695px){
+    form{
+      margin: 5cm 4cm 0 0;
+    }
+  }
+  @media(max-width: 500px){
+    form{
+      margin: 5cm 5.5cm 0 0;
+    }
   }
   
-  .container_tracking .text_overlay {
-    position: absolute;
-    top: 30%; /* Atur posisi teks di atas gambar */
-    left: 70%; /* Atur posisi teks dari sisi kiri gambar */
-    color: black; /* Warna teks */
-    padding: 5px 10px; /* Padding teks */
-    font-size: 40px; /* Ukuran teks */
-  }
-  
-  .tracking_check{
-    justify-content: center;
-    align-items: center;
+  form h1{
+    color: white;
+    font-weight: 800;
+    font-size: 1.7em;
+    padding: 5px;
+    margin-bottom: 15px;
     text-align: center;
   }
   
-  .tracking_check img{
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 70px;
-    width: 100%; /* Lebar gambar 50% dari container */
-    height: auto; /* Tinggi gambar disesuaikan secara otomatis agar menjaga aspek rasio */
-  }
-  
-  .tracking_check input {
+  form input, textarea{
     border: 0;
-    margin: 10px 0 10px;
-    padding: 10px;
+    margin: 10px 0 0;
+    padding: 20px;
     outline: none;
     background: #e2e2e2;
     font-size: 16px;
-    border-radius: 0;
+    border-radius: 1em;
     transition: all 0.5s;
-    width: 50%; 
   }
   
-  .tracking_check button {
-    padding: 10px;
-    background: #c1121f;
-    color: white;
-    font-size: 16px;
-    border: 1px solid transparent;
-    outline: none;
+  form input:focus, form textarea:focus{ 
+    background: white
+  }
+  form textarea{
+    resize: none;
+  }
+  form button{
+    padding: 0.8em ;
+    background: white;
+    color: #c1121f;
+    font-size: 1.2em;
+    border: 1;
+    border-color: transparent;
+    outline:none;
     cursor: pointer;
-    width: 15em;
+    width: 10em;
     margin: 1em auto 0.5em;
-    border-radius: 0;
+    border-radius: 2em;
   }
-  
-  .tracking_check button:hover{
+  form button:hover{
     background: #c1121f;
     color:white ;
     border-color: white;
     font-weight: bolder;
   }
-
- 
+  

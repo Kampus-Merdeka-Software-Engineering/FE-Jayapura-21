@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JTExpress - Your Express Delivery Service</title>
-    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="input.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
 </head>
 <body>
@@ -16,7 +16,7 @@
             <ul><a href="input.html"> <img src="assets/Services.png" alt=""> Input Package</a></ul>
             <ul><a href="index.html"> <img src="assets/home.png" alt=""> HOME</a></ul>
         </nav>
-    </header>>
+    </header>
           <!--SideBar (Start)-->
      <div class="navigation">
         <ul>
@@ -83,69 +83,65 @@
     </div>
     </div>
     <!--SideBar (Finish)-->
-    <div class="about-us">
-        <div class="sejarah">
-            <h1>Sejarah</h1>
-            <br>
-            <p>
-                Berdiri pada tanggal 1 September 2023 sebagai PT. Jasa Transparan Express yang melahirkan produk berbentuk jasa antar barang maupun dokumen.
-            Lahirya Jejak Transparan Exspress (JTE) diawali dari keinginan sekelompok orang untuk bisa mendapatkan nilai terbaik dalam <i>Capstone Project</i> pada Program Studen Independen Kampus Merdeka.
-            <br>PT.Jasa Transparan Express bersama bisnis partner PT.Revolusi Cita Edukasi(RevoU) ingin menghadirkan Sumber Daya Manusia (SDM) dan jasa antar yang bisa menjadi pilihan utama & terpercaya masyarakat Indonesia karena kepastian & keamanan yang menjadi utama.</p>
-        </div>
-        <div class="vm">
-            <div class=" visi">
-                <h1>VISI</h1>
-                <br>
-                <p>Menjadi perusahaan sekaligus keluarga bagi masyarakat Indonesia yang terpercaya dalam proses pengiriman kesegala penjuru dunia</p>
-            </div>
-            <div class="misi">
-                <h1>MISI</h1>
-                <br>
-                <ul>
-                    <li>Menjadi jasa antar pilihan dan andalan masyarakat Indonesia</li>
-                    <li>Memberikan pengalaman terbaik untuk tiap kalangan masyarakat dalam antar barang</li>
-                    <li>Menjadi jasa antar yang terpercaya dan aman</li>
-                </ul>
-            </div>
-        <div class="profile">
-            <h1>PENDIRI</h1>
-            <div class="cards">
-                <div class="card1">
-                    <img src="#" alt="">
-                    <h3>Aji</h3>
-                    <p>Nama univ</p>
-                <!-- <div class="card">
-                    <img src="#" alt="">
-                    <h3>Latisa</h3>
-                    <p>Nama Univ</p>
-                </div>
-                <div class="card">
-                    <img src="" alt="">
-                    <h3>Riskila</h3>
-                    <p>Nama Univ</p>
-                </div>
-                <div class="card">
-                    <img src="" alt="">
-                    <h3>Anggi</h3>
-                    <p>Nama Univ</p>
-                </div>
-                <div class="card">
-                    <img src="" alt="">
-                    <h3>Aini</h3>
-                    <p>Nama Univ</p>
-                </div>
-                <div class="card">
-                    <img src="" alt="">
-                    <h3>Mardi</h3>
-                    <p>Nama Univ</p>
-                </div> -->
-                
-            </div>
+    <div class="container-us">
+            <form>
+                <h1>Input Barang</h1>
+                <input name="Id" type="text" placeholder="No.Id">
+                <input name="name" type="text" placeholder="Nama Pengirim">
+                <input name="email" type="email" placeholder="Email Pengirim">
+                <input name="address" type="email" placeholder="Alamat Pengirim">
+                <input name="name" type="text" placeholder="Nama Penerima">
+                <input name="email" type="email" placeholder="Email Penerima">
+                <input name="address" type="email" placeholder="Alamat Penerima">
+                <textarea name="massage" placeholder="Your Massage" rows="Your Message"></textarea>
+                <button type="submit" onclick="myButton()">Send</button>
+            </form>
         </div>
     </div>
+    <!--Footer (start)-->
+    <div class="about">
+        <img src="assets/Logo-JTExpress.png" alt="">
+        <div class="footer-alamat">
+            <div class="kantorPusat">
+                <h3>KANTOR PUSAT</h3>
+                <br>
+                <p>PT. Jasa Transparan Express</p>
+                <p>Jl. Sudirman No. 11 Jakarta Pusat 11440 Indonesia</p>
+                <p>Contact center. 089513891995</p>
+                <p>Office. (62-21) XXXXX</p>
+                <p>Fax. (62-21) XXXXXX</p>
+                <p>Email. customercare@jte.co.id</p>
+            </div>
+            <div class="tentangJTE">
+                <h3>Tentang JTE</h3>
+                <br>
+                <a class="JteProf" href="about.html"><p>Profil Perusahaan</p></a>
+            </div>
+            <div class="services">
+                <h3>Service</h3>
+                <br>
+                <a class="JteProf" href="contactMassage.html"><p>Hubungi kami</p></a>
+            </div>
+        </div>
+
+        <div class="sosmed">
+            <ul><a class="instagram" href="#"><i class="fa-brands fa-instagram" ></i></a></ul>
+            <ul><a class="twitter" href="#"><i class="fa-brands fa-x-twitter"></i></a></ul>
+            <ul><a class="tiktok" href="#"><i class="fa-brands fa-tiktok"></i></a></ul>
+        </div>
+    </div>
+    <div class="footer">
+        <p>Copyright © 2023 PT. Jasa Transparan Express. All Rights Reserved</p>
+        <img src="assets/Logo-JTE.png" alt="">
+    </div>
+    <!--Footer (Finish)-->
     <script>
-            //Side Bar
-            let navigation = document.querySelector('.navigation');
+        function myButton(){
+            alert ("Pesan telah terkirim, mohon tunggu beberapa saat ya ^^");
+        }
+
+          //Side Bar
+          let navigation = document.querySelector('.navigation');
         let toggle = document.querySelector('.toggle');
         toggle.onclick = function(){
             navigation.classList.toggle('active');
