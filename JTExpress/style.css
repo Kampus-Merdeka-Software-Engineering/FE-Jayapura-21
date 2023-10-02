@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400&family=Inter:wght@200&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400&family=Inter:wght@200&display=swap");
 
-:root{
+:root {
   scroll-behavior: smooth;
 }
 
@@ -8,8 +8,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Comfortaa';
-
+  font-family: "Comfortaa";
 }
 
 header {
@@ -26,9 +25,15 @@ header nav ul a img {
   margin-top: -5px;
 }
 
+#logo {
+  margin-top: 10px;
+  padding-left: 40px;
+}
+
 #logo,
 header nav {
-  height: 110px;
+  height: 90px;
+  margin-right: 50px;
 }
 
 header img {
@@ -46,32 +51,11 @@ header nav ul a {
   text-decoration: none;
   color: white;
   font-weight: bolder;
-  padding-right: 100px;
+  padding-right: 50px;
 }
-header nav ul:hover{
+
+header nav ul:hover {
   padding-top: 50px;
-}
-
-/*responsive navbar*/
-@media(min-width: 1190px){
-  .navigation .title-side{
-    display: none;
-
-  }
-  .navigation ul li a .icon-side i{
-    display: none;
-  }
-}
-@media(max-width: 1280px){
-  #logo{
-    padding-left: 40px;
-  }
-
-}
-@media (max-width: 1190px){
-  nav ul a{
-    display: none;
-  }
 }
 
 .container {
@@ -82,51 +66,45 @@ header nav ul:hover{
   height: 800px;
 }
 
-.container img {
+.slider-container {
   width: 100%;
-  height: 800px;
+  overflow: hidden;
 }
 
 .slider {
   display: flex;
   transition: transform 0.5s ease-in-out;
-  width: 500%;
 }
 
-.slider img {
+.slide {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.slide img {
   width: 100%;
   height: auto;
-}
-
-.slider.slide-1 {
-  transform: translateX(0);
-}
-.slider.slide-2 {
-  transform: translateX(-20%);
-}
-.slider.slide-3 {
-  transform: translateX(-40%);
-}
-.slider.slide-4 {
-  transform: translateX(-60%);
-}
-.slider.slide-5 {
-  transform: translateX(-80%);
+  min-height: 650px;
+  object-fit: cover;
 }
 
 .break {
   height: 80px;
 }
 
+/* CSS default */
 .excess {
   background-image: url(assets/background-bawah.png);
-  height: 640px;
+  height: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
   text-align: center;
+  padding-bottom: 20px;
 }
 
 .excess h1 {
   color: white;
-  padding: 20px 0px 10px 0px;
+  padding: 40px 0px 20px 0px;
   font-size: 60px;
 }
 
@@ -140,10 +118,11 @@ header nav ul:hover{
 
 .card {
   width: 300px;
-  height: 380px;
+  height: 420px;
   background-color: white;
   border-radius: 10px;
   transition: box-shadow 0.5s ease; /* Transisi untuk efek bayangan */
+  padding: 20px;
 }
 
 .card:hover {
@@ -177,8 +156,7 @@ header nav ul:hover{
 }
 
 .tentangJTE,
-
-P{
+P {
   line-height: 20px;
 }
 
@@ -196,13 +174,13 @@ P{
   width: 20%;
 }
 
-.sosmed ul{
+.sosmed ul {
   float: right;
   justify-content: space-between;
   margin: -15px 10px 0;
 }
 
-.sosmed ul a{
+.sosmed ul a {
   display: grid;
   width: 40px;
   height: 40px;
@@ -213,9 +191,9 @@ P{
   align-items: center;
   justify-content: center;
   z-index: 2;
-  }
+}
 
-.sosmed a:hover{
+.sosmed a:hover {
   color: #000;
 }
 
@@ -230,128 +208,270 @@ P{
   color: #c1121f;
 }
 
-  /*SideBar*/
-  .navigation{
-    position: fixed;
-    top: 115px;
-    right: -65px;
-    bottom: 0;
-    background: #c1121f;
-    width: 80px;
-    border-left: 15px solid #c1121f;
-    border-radius: 50px;
-    overflow: hidden;
-    box-shadow: 15px 15px 25px rgba(0,0,0,0.05);
-    transition: 0.5s;
-    z-index: 9999;
-  }
-  .navigation ul li a span{
-    z-index: 9999;
-  }
-  .navigation.active{
-    width: 300px;
-    border-radius: 20px;
-  }
-  .toggle{
-    position: fixed;
-    top: 30px;
-    right: 20px;
-    width: 50px;
-    height: 50px;
-    background: white;
-    border-radius: 50%;
-    box-shadow: 5px 5px 10px rgba(0,0,0,0.15);
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .toggle::before{
-    content: '';
-    position: absolute;
-    width: 26px;
-    height: 3px;
-    border-radius: 3px;
-    background: #365fa1;
-    transform: translateY(-5px);
-    transition: 1s;
-  }
-  .toggle::after{
-    content: '';
-    position: absolute;
-    width: 26px;
-    height: 3px;
-    border-radius: 3px;
-    background: #365fa1;
-    transform: translateY(5px);
-    transition: 1s;
-    }
-  .navigation.active .toggle::before{
-    transform: translateY(0px) rotate(-405deg);
-  }
-  .navigation.active .toggle::after{
-    transform: translateY(0px) rotate(225deg);
-  }
-  .navigation ul{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-  }
-  .navigation ul li{
-    position: relative;
-    list-style: none;
-    width: 100%;
-    border-top-left-radius: 30px ;
-    border-bottom-left-radius: 30px ;
-  }
-  @media (max-width: 1190px){
-    .navigation ul{
-      top: 20px;
-    }
-    .navigation ul li a .icon-side{
-      position: relative;
-      display: block;
-      min-height: 10px;
-      height: 10px;
-      line-height: 20px;
-      text-align: center;
-    }
-    .navigation ul li a .icon-side .fa-solid{
-      font-size: 15px;
-      padding-left: 10px;
-      padding-right: 10px;
-    }
-  }
-  
-  .navigation ul li:hover{
-    background: red;
-    border-color: white;
-  }
-  
-  .navigation ul li:nth-child(5){
-    left: 35px;
-    top: 20px;
-    font-weight: bold;
-    margin-bottom: 56px;
-    background: none;
-    color: white;
-  }
-  .navigation ul li a{
-    position: relative;
-    display: block;
-    width: 100%;
-    display: flex;
-    margin-bottom: 10px;
-    text-decoration: none;
-    color: white;
-  }
-  
-  /* .navigation ul li:hover:not(li:nth-child(5)){
+/*SideBar*/
+.navigation {
+  position: fixed;
+  top: 115px;
+  right: -65px;
+  bottom: 0;
+  background: #c1121f;
+  width: 80px;
+  border-left: 15px solid #c1121f;
+  border-radius: 50px;
+  overflow: hidden;
+  box-shadow: 15px 15px 25px rgba(0, 0, 0, 0.05);
+  transition: 0.5s;
+  z-index: 9999;
+}
+.navigation ul li a span {
+  z-index: 9999;
+}
+.navigation.active {
+  width: 300px;
+  border-radius: 20px;
+}
+.toggle {
+  position: fixed;
+  top: 30px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background: white;
+  border-radius: 50%;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.toggle::before {
+  content: "";
+  position: absolute;
+  width: 26px;
+  height: 3px;
+  border-radius: 3px;
+  background: #365fa1;
+  transform: translateY(-5px);
+  transition: 1s;
+}
+.toggle::after {
+  content: "";
+  position: absolute;
+  width: 26px;
+  height: 3px;
+  border-radius: 3px;
+  background: #365fa1;
+  transform: translateY(5px);
+  transition: 1s;
+}
+.navigation.active .toggle::before {
+  transform: translateY(0px) rotate(-405deg);
+}
+.navigation.active .toggle::after {
+  transform: translateY(0px) rotate(225deg);
+}
+.navigation ul {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.navigation ul li {
+  position: relative;
+  list-style: none;
+  width: 100%;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+
+.navigation ul li:hover {
+  background: red;
+  border-color: white;
+}
+
+.navigation ul li:nth-child(5) {
+  left: 35px;
+  top: 20px;
+  font-weight: bold;
+  margin-bottom: 56px;
+  background: none;
+  color: white;
+}
+.navigation ul li a {
+  position: relative;
+  display: block;
+  width: 100%;
+  display: flex;
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: white;
+}
+
+/* .navigation ul li:hover:not(li:nth-child(5)){
     color: white;
   } */
-  
-  .navigation ul li a .icon{
+
+.navigation ul li a .icon {
+  position: relative;
+  display: block;
+  min-height: 10px;
+  height: 10px;
+  line-height: 20px;
+  text-align: center;
+}
+.navigation ul li a .icon .fa-solid {
+  font-size: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+/*tracking*/
+.container_tracking .img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 33px auto;
+  width: 50%; /* Lebar gambar 50% dari container */
+  height: auto; /* Tinggi gambar disesuaikan secara otomatis agar menjaga aspek rasio */
+}
+
+.container_tracking {
+  position: relative;
+  display: inline-block;
+}
+
+.container_tracking .text_overlay {
+  position: absolute;
+  top: 30%; /* Atur posisi teks di atas gambar */
+  left: 70%; /* Atur posisi teks dari sisi kiri gambar */
+  color: black; /* Warna teks */
+  padding: 5px 10px; /* Padding teks */
+  font-size: 40px; /* Ukuran teks */
+}
+
+.tracking_check {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.tracking_check img {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 70px;
+  width: 100%; /* Lebar gambar 50% dari container */
+  height: auto; /* Tinggi gambar disesuaikan secara otomatis agar menjaga aspek rasio */
+}
+
+.tracking_check input {
+  border: 0;
+  margin: 10px 0 10px;
+  padding: 10px;
+  outline: none;
+  background: #e2e2e2;
+  font-size: 16px;
+  border-radius: 0;
+  transition: all 0.5s;
+  width: 50%;
+}
+
+.tracking_check button {
+  padding: 10px;
+  background: #c1121f;
+  color: white;
+  font-size: 16px;
+  border: 1px solid transparent;
+  outline: none;
+  cursor: pointer;
+  width: 15em;
+  margin: 1em auto 0.5em;
+  border-radius: 0;
+}
+
+.tracking_check button:hover {
+  background: #c1121f;
+  color: white;
+  border-color: white;
+  font-weight: bolder;
+}
+
+/*responsive navbar*/
+
+@media (min-width: 1190px) {
+  .navigation .title-side {
+    display: none;
+  }
+  .navigation ul li a .icon-side i {
+    display: none;
+  }
+}
+
+/* CSS untuk layar dengan lebar maksimum 600px */
+@media (max-width: 600px) {
+  .excess {
+    height: auto; /* Set tinggi ke otomatis */
+    padding: 20px; /* Tambahkan ruang di sekitar konten */
+  }
+
+  .excess h1 {
+    font-size: 20px; /* Ukuran font yang lebih kecil */
+  }
+
+  .container-card {
+    flex-direction: column; /* Ubah arah kolom untuk card */
+    align-items: center; /* Pusatkan card */
+    gap: 10px; /* Ruang antara card */
+  }
+
+  .card {
+    width: 300px;
+    height: 420px;
+  }
+
+  .footer p{
+    padding: 20px 0px;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 1410px) {
+  .excess {
+    height: auto; /* Set tinggi ke otomatis */
+    padding: 20px; /* Tambahkan ruang di sekitar konten */
+  }
+
+  .excess h1 {
+    font-size: 40px; /* Ukuran font yang lebih kecil */
+  }
+
+  .container-card {
+    flex-direction: row; /* Ubah arah kolom untuk card */
+    flex-wrap: wrap;
+    align-items: center; /* Pusatkan card */
+    gap: 40px; /* Ruang antara card */
+  }
+
+  .card {
+    width: 300px;
+    height: 420px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .footer-alamat {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 1190px) {
+  nav ul a {
+    display: none;
+  }
+  .navigation ul {
+    top: 20px;
+  }
+  .navigation ul li a .icon-side {
     position: relative;
     display: block;
     min-height: 10px;
@@ -359,81 +479,9 @@ P{
     line-height: 20px;
     text-align: center;
   }
-  .navigation ul li a .icon .fa-solid{
+  .navigation ul li a .icon-side .fa-solid {
     font-size: 15px;
     padding-left: 10px;
     padding-right: 10px;
   }
-  /*tracking*/
-  .container_tracking .img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 33px auto;
-    width: 50%; /* Lebar gambar 50% dari container */
-    height: auto; /* Tinggi gambar disesuaikan secara otomatis agar menjaga aspek rasio */
-  }
-  
-  .container_tracking {
-    position: relative;
-    display: inline-block;
-  }
-  
-  .container_tracking .text_overlay {
-    position: absolute;
-    top: 30%; /* Atur posisi teks di atas gambar */
-    left: 70%; /* Atur posisi teks dari sisi kiri gambar */
-    color: black; /* Warna teks */
-    padding: 5px 10px; /* Padding teks */
-    font-size: 40px; /* Ukuran teks */
-  }
-  
-  .tracking_check{
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-  
-  .tracking_check img{
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 70px;
-    width: 100%; /* Lebar gambar 50% dari container */
-    height: auto; /* Tinggi gambar disesuaikan secara otomatis agar menjaga aspek rasio */
-  }
-  
-  .tracking_check input {
-    border: 0;
-    margin: 10px 0 10px;
-    padding: 10px;
-    outline: none;
-    background: #e2e2e2;
-    font-size: 16px;
-    border-radius: 0;
-    transition: all 0.5s;
-    width: 50%; 
-  }
-  
-  .tracking_check button {
-    padding: 10px;
-    background: #c1121f;
-    color: white;
-    font-size: 16px;
-    border: 1px solid transparent;
-    outline: none;
-    cursor: pointer;
-    width: 15em;
-    margin: 1em auto 0.5em;
-    border-radius: 0;
-  }
-  
-  .tracking_check button:hover{
-    background: #c1121f;
-    color:white ;
-    border-color: white;
-    font-weight: bolder;
-  }
-
- 
+}
