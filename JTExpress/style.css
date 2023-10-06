@@ -324,28 +324,29 @@ P {
   padding-left: 10px;
   padding-right: 10px;
 }
+
 /*tracking*/
-.container_tracking .img {
+.container_tracking {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 33px auto;
-  width: 50%; /* Lebar gambar 50% dari container */
-  height: auto; /* Tinggi gambar disesuaikan secara otomatis agar menjaga aspek rasio */
+  /* margin-top: 33px auto; */
+  width: 100%; 
+  height: auto; 
 }
 
-.container_tracking {
+/* .container_tracking {
   position: relative;
   display: inline-block;
-}
+} */
 
-.container_tracking .text_overlay {
+.text_overlay {
   position: absolute;
-  top: 30%; /* Atur posisi teks di atas gambar */
-  left: 70%; /* Atur posisi teks dari sisi kiri gambar */
-  color: black; /* Warna teks */
-  padding: 5px 10px; /* Padding teks */
-  font-size: 40px; /* Ukuran teks */
+  top: 30%;
+  left: 65%; 
+  color: black; 
+  padding: 5px 10px;
+  font-size: 40px; 
 }
 
 .tracking_check {
@@ -483,5 +484,50 @@ P {
     font-size: 15px;
     padding-left: 10px;
     padding-right: 10px;
+  }
+}
+
+@media (max-width: 1138px) {
+  .text_overlay {
+    font-size: 4vw;
+    top: 20%;
+  }  
+}
+
+@media (max-width: 768px) {
+  .text_overlay {
+    font-size: 3vw; 
+    top: 30%;
+  }
+}
+
+/*Tracking*/
+@media (max-width: 598px) {
+  .text_overlay {
+    font-size: 2.5vw; 
+    top: 25%;
+  }
+}
+
+@media (max-width: 498px) {
+  .text_overlay {
+    font-size: 2.5vw; 
+    top: 20%;
+  }
+
+  .tracking_check input{
+    width: 35%;
+    padding: 5px;
+    font-size: 10px;
+  }
+
+  .tracking_check button{
+    width: 8em;
+    padding: 5px;
+    font-size: 10px;
+  }
+
+  .tracking_check h1{
+    font-size: 20px;
   }
 }
