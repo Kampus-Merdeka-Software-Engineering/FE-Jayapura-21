@@ -56,7 +56,7 @@ hitungButton.addEventListener("click", () => {
   } else if (beratPaket > 100) {
     hasilOngkos.textContent = "maximum weight";
   } else {
-    alert("Pesan telah terkirim, mohon tunggu beberapa saat ya ^^");
+    alert("Sedang kami hitungkan ya ^^");
     const ongkosKirim = beratPaket * tarifPerKg;
     hasilOngkos.textContent = `Ongkos kirim ke ${tujuan}: Rp ${ongkosKirim}`;
   }

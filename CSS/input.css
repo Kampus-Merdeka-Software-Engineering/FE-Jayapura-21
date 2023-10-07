@@ -273,39 +273,26 @@ header nav ul:hover {
   
   /*input*/
   .container-us{
-    min-width: 100vh;
+    min-width: 90vw;
     margin-bottom: 40px;
     background-color: white;
     display: flex;
     align-items: center;
-    justify-content: right;
+    justify-content: center;
   }
   
   form{
-    margin: 5cm 2cm 0 0;
+    margin: 4cm 0 0 0;
     background-color: #c1121f;
     display: flex;
+    justify-content: center;
     flex-direction: column;
     padding:  10px 15px 10px 15px;
     width: 10cm;
     max-width: 600px;
     border-radius: 30px;
   }
-  @media(max-width: 878px){
-    form{
-      margin: 5cm 3cm 0 0;
-    }
-  }
-  @media(max-width: 695px){
-    form{
-      margin: 5cm 4cm 0 0;
-    }
-  }
-  @media(max-width: 500px){
-    form{
-      margin: 5cm 5.5cm 0 0;
-    }
-  }
+  
   
   form h1{
     color: white;
@@ -362,7 +349,6 @@ header nav ul:hover {
   margin-bottom: 5%;
   position: relative;
 }
-
 
 .SR {
   background-color: #c1121f;

@@ -1,7 +1,7 @@
 const slider = document.querySelector('.slider');
 let slideIndex = 1;
 function showSlide(index) {
-  slider.style.transform = `translateX(-${(index - 1) * 20}%)`;
+  slider.style.transform = `translateX(-${(index - 1) * 100}%)`;
 }
 function nextSlide() {
   slideIndex = (slideIndex % 5) + 1;
