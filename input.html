@@ -4,20 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JTExpress - Your Express Delivery Service</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="CSS/input.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
 </head>
 <body>
     <header>
         <img id="logo" src="assets/Logo-JTExpress.png" alt="Logo-JTExpress">
         <nav>
-            <ul><a href="tracking.html"> <img src="assets/LogOut.png" alt=""> TRACKING</a></ul>
-            <ul><a href="about.html"> <img src="assets/AboutUs.png" alt=""> TENTANG KAMI</a></ul>
-            <ul><a href="input.html"> <img src="assets/Services.png" alt=""> INPUT PACKAGE</a></ul>
-            <ul><a href="index.html"> <img src="assets/home.png" alt=""> HOME</a></ul>
+            <ul><a href="tracking.html"> <img src="assets/LogOut.png" alt="">TRACKING</a></ul>
+            <ul><a href="about.html"> <img src="assets/AboutUs.png" alt="">TENTANG KAMI</a></ul>
+            <ul><a href="input.html"> <img src="assets/Services.png" alt="">INPUT BARANG</a></ul>
+            <ul><a href="index.html"> <img src="assets/home.png" alt="">HOME</a></ul>
         </nav>
     </header>
-     <!--SideBar (Start)-->
+          <!--SideBar (Start)-->
      <div class="navigation">
         <ul>
 
@@ -54,12 +54,7 @@
                 </a>
             </li>
 
-            <li>
-                <a href="RegisterLogin.html">
-                    <span class="icon"><i class="fa-solid fa-circle-dot"></i></span>
-                    <span class="title">Register/Login</span>
-                </a>
-            </li>
+           
             <li>
                 <a href="ShippingRate.html">
                     <span class="icon"><i class="fa-solid fa-circle-dot"></i></span>
@@ -77,60 +72,22 @@
     </div>
     </div>
     <!--SideBar (Finish)-->
-    <!-- <div class="container">
-        <div class="slider">
-            <img src="assets/Slider-1.jpg" alt="">
-            <img src="assets/Slider-2.jpg" alt="">
-            <img src="assets/Slider-3.jpg" alt="">
-            <img src="assets/Slider-4.jpg" alt="">
-            <img src="assets/Slider-5.jpg" alt="">
-        </div>
-    </div> -->
-    <div class="slider-container">
-        <div class="slider">
-            <div class="slide">
-                <img src="assets/Slider-1.jpg" alt="Slide 1">
-            </div>
-            <div class="slide">
-                <img src="assets/Slider-2.jpg" alt="Slide 2">
-            </div>
-            <div class="slide">
-                <img src="assets/Slider-3.jpg" alt="Slide 3">
-            </div>
-            <div class="slide">
-                <img src="assets/Slider-4.jpg" alt="Slide 3">
-            </div>
-            <div class="slide">
-                <img src="assets/Slider-5.jpg" alt="Slide 3">
-            </div>
+    <div class="container-us">
+            <form>
+                <h1>Input Barang</h1>
+                <input name="Id" type="text" placeholder="No.Id">
+                <input name="name" type="text" placeholder="Nama Pengirim">
+                <input name="email" type="email" placeholder="Email Pengirim">
+                <input name="address" type="email" placeholder="Alamat Pengirim">
+                <input name="name" type="text" placeholder="Nama Penerima">
+                <input name="email" type="email" placeholder="Email Penerima">
+                <input name="address" type="email" placeholder="Alamat Penerima">
+                <textarea name="massage" placeholder="Your Massage" rows="Your Message"></textarea>
+                <button type="submit" onclick="myButton()">Send</button>
+            </form>
         </div>
     </div>
-    <div class="break"></div>
-    <div class="excess" id="services">
-        <h1>Terkirim dengan Cepat, Selamat, dan Tepat!</h1>
-        <div class="container-card">
-            <div class="card"> 
-                <img src="assets/COD.png" alt="">
-                <h3>Cash On Delivery (COD)</h3>
-                <p>Pilihan untuk membayar saat menerima barang dalam pembelian online di beberapa platform e-commerce</p>
-            </div>
-            <div class="card">
-                <img src="assets/HP.png" alt="">
-                <h3>JTE Aplikasi</h3>
-                <p>Kemudahan mengakses semua fasilitas JTE dalam genggaman Anda.</p>
-            </div>
-            <div class="card">
-                <img src="assets/Layanan-Asuransi.png" alt="">
-                <h3>Layanan Asuransi</h3>
-                <p>Layanan yang mempermudah pengambilan paket secara GRATIS, tanpa memandang berat paket atau asal tujuan</p>
-            </div>
-            <div class="card">
-                <img src="assets/SobatJTE.png" alt="">
-                <h3>SobatJTE</h3>
-                <p>Program membership untuk pelanggan setia JTE dengan berbagai keuntungan</p>
-            </div>
-        </div>
-    </div>
+    <!--Footer (start)-->
     <div class="about">
         <img src="assets/Logo-JTExpress.png" alt="">
         <div class="footer-alamat">
@@ -155,7 +112,6 @@
                 <a class="JteProf" href="input.html"><p>Gunakan Jasa kami</p></a>
             </div>
         </div>
-        <br><br>
 
         <div class="sosmed">
             <ul><a class="instagram" href="https://instagram.com/jntexpressid?igshid=MWZjMTM2ODFkZg=="><i class="fa-brands fa-instagram" ></i></a></ul>
@@ -167,8 +123,8 @@
         <p>Copyright © 2023 PT. Jasa Transparan Express. All Rights Reserved</p>
         <img src="assets/Logo-JTE.png" alt="">
     </div>
-    
-
-    <script src="JS/script.js"></script>
+    <!--Footer (Finish)-->
+    <script src="JS/script.js">
+    </script>
 </body>
 </html>

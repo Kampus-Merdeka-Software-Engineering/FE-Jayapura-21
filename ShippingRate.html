@@ -11,37 +11,36 @@
     <header>
         <img id="logo" src="assets/Logo-JTExpress.png" alt="Logo-JTExpress">
         <nav>
-            <ul><a href="tracking.html"> <img src="assets/LogOut.png" alt=""> Tracking</a></ul>
-            <ul><a href="about.html"> <img src="assets/AboutUs.png" alt=""> Tentang Kami</a></ul>
-            <ul><a href="input.html"> <img src="assets/Services.png" alt=""> Input Package</a></ul>
-            <ul><a href="index.html"> <img src="assets/home.png" alt=""> HOME</a></ul>
+            <ul><a href="tracking.html"> <img src="assets/LogOut.png" alt="">TRACKING</a></ul>
+            <ul><a href="about.html"> <img src="assets/AboutUs.png" alt="">TENTANG KAMI</a></ul>
+            <ul><a href="input.html"> <img src="assets/Services.png" alt="">INPUT BARANG</a></ul>
+            <ul><a href="index.html"> <img src="assets/home.png" alt="">HOME</a></ul>
         </nav>
     </header>
-          <!--SideBar (Start)-->
-     <div class="navigation">
+    <!--SideBar (Start)-->
+    <div class="navigation">
         <ul>
-
             <li>
                 <a href="index.html">
-                    <span class="icon-side"><i class="fa-solid fa-circle-dot"></i></span>
+                    <span class="icon-side"></span>
                     <span class="title-side">Home</span>
                 </a>
             </li>
             <li>
                 <a href="input.html">
-                    <span class="icon-side"><i class="fa-solid fa-circle-dot"></i></span>
+                    <span class="icon-side"></span>
                     <span class="title-side">Input Package</span>
                 </a>
             </li>
             <li>
                 <a href="about.html">
-                    <span class="icon-side"><i class="fa-solid fa-circle-dot"></i></span>
+                    <span class="icon-side"></span>
                     <span class="title-side">Tentang Kami</span>
                 </a>
             </li>
             <li>
                 <a href="tracking.html">
-                    <span class="icon-side"><i class="fa-solid fa-circle-dot"></i></span>
+                    <span class="icon-side"></span>
                     <span class="title-side">Tracking</span>
                 </a>
             </li>
@@ -53,13 +52,7 @@
                     <span class="title">Lihat Kembali</span>
                 </a>
             </li>
-
-            <li>
-                <a href="RegisterLogin.html">
-                    <span class="icon"><i class="fa-solid fa-circle-dot"></i></span>
-                    <span class="title">Register/Login</span>
-                </a>
-            </li>
+        
             <li>
                 <a href="ShippingRate.html">
                     <span class="icon"><i class="fa-solid fa-circle-dot"></i></span>
@@ -67,7 +60,7 @@
                 </a>
             </li>
             <li>
-                <a href="index.html#services">
+                <a href="index.html#Services">
                     <span class="icon"><i class ="fa-solid fa-circle-dot"></i></span>
                     <span class="title">Pelayanan</span>
                 </a>
@@ -77,19 +70,31 @@
     </div>
     </div>
     <!--SideBar (Finish)-->
-    <div class="container-us">
-            <form>
-                <h1>Input Barang</h1>
-                <input name="Id" type="text" placeholder="No.Id">
-                <input name="name" type="text" placeholder="Nama Pengirim">
-                <input name="email" type="email" placeholder="Email Pengirim">
-                <input name="address" type="email" placeholder="Alamat Pengirim">
-                <input name="name" type="text" placeholder="Nama Penerima">
-                <input name="email" type="email" placeholder="Email Penerima">
-                <input name="address" type="email" placeholder="Alamat Penerima">
-                <textarea name="massage" placeholder="Your Massage" rows="Your Message"></textarea>
-                <button type="submit" onclick="myButton()">Send</button>
+    <div class="container-SR">
+            <form class="SR">
+                <h1>shipping rate</h1>
+                <label for="Drop">Drop Poin Location</label>
+                <select name="" Id="Drop" placeholder="Select Drop Poin">
+                <option value="JTE 1">JTE Sudirman</option>
+                </select>
+                <label for="weight">Weight (Kg)</label>
+                <input id="weight" name="weight" type="number" placeholder="Input Weight in kg">
+                <label for="To">Destination</label>
+                <select name="To" Id="tujuan" placeholder="Select Your Destination">
+                    <option value="Jakarta Barat">Jakarta Barat</option>
+                    <option value="Jakarta Timur">Jakarta Timur</option>
+                    <option value="Jakarta Pusat">Jakarta Pusat</option>
+                    <option value="Jakarta Selatan">Jakarta Selatan</option>
+                    <option value="Bogor">Bogor</option>
+                    <option value="Tangerang">Tangerang</option>
+                    <option value="Bekasi">Bekasi</option>
+                    <option value="Depok">Depok</option>
+                </select>
+                <button type="button" id="hitungButton">Calculate</button>
+                 <h1 id="hasilOngkos"></h1>
             </form>
+               
+            <!-- <div id="shipping-estimate"></div> -->
         </div>
     </div>
     <!--Footer (start)-->
@@ -128,8 +133,7 @@
         <p>Copyright © 2023 PT. Jasa Transparan Express. All Rights Reserved</p>
         <img src="assets/Logo-JTE.png" alt="">
     </div>
-    <!--Footer (Finish)-->
-    <script src="JS/script.js">
-    </script>
+
+    <script src="JS/connect.js"></script>
 </body>
 </html>
