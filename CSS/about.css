@@ -194,16 +194,23 @@ header nav ul:hover {
   
  /*about us*/
  .about-us{
+    display: flex;
     background: white;
     padding: 10px 10px 5px;
     font-size: 20px;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
   }
   
   .about-us .sejarah{
     position: relative;
     top: 4cm;
-    left: 74px;
-    padding: 10px 110px 30px 110px;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding: 40px;
     text-align: center;
     width: 90%;
     height: auto;
@@ -215,7 +222,6 @@ header nav ul:hover {
                 5px -5px 15px #f31727; */
   }
   .about-us .sejarah h1{
-    margin-top: 10px;
     font-size: 45px;
     text-align: center;
   }
@@ -231,7 +237,7 @@ header nav ul:hover {
   }
   .about-us .vm .visi{
     position: relative;
-    padding: 1cm 90px 40px 90px;
+    padding: 30px;
     text-align: center;
     margin: 0 50px 0 50px;
   }
@@ -243,19 +249,22 @@ header nav ul:hover {
   
   .about-us .vm .misi{
     padding: 2px 20px;
-    margin: 0 50px 0 50px;
-    padding: 0 110px 10px 90px;
+    margin: 0 50px;
+    padding: 30px;
   }
   .about-us .vm .misi h1{
     font-size: 45px;
     text-align: center;
   }
   .about-us .vm{
+    justify-content: center;
+    align-items: center;
     top: 5cm;
-    left: 75px;
+    margin: auto;
     width: 90%;
-    height: 12cm;
+    height: auto;
     position: relative;
+    margin-bottom: 30px;
     border-radius: 66px;
     background: linear-gradient(145deg, #f5e6e7, #cec2c2);
     /* box-shadow:  5px 5px 15px #a99fa0,
@@ -273,7 +282,7 @@ header nav ul:hover {
     margin-top: 25px;
     margin-bottom: 30px;
     top: 5cm;
-    left: 75px;
+    margin: auto;
     width: 90%;
     height: auto;
     justify-content: center;
@@ -291,10 +300,16 @@ header nav ul:hover {
   }
 
   .profile .cards {
-    margin: 7%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 20px;
+    padding: 30px;
   }
 
- .about-us .profile .cards {
+ /* .about-us .profile .cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
     margin-top: 5px;
@@ -302,7 +317,7 @@ header nav ul:hover {
     gap: 66px;
     justify-content: center;
     margin-bottom: 5px;
-  }
+  } */
   .about-us .profile .cards .card {
     width: 250px;
     height: 270px;
@@ -379,6 +394,93 @@ header nav ul:hover {
   }
 }
 
+ /*footer*/
+ .about {
+  background-color: #c1121f;
+  padding: 50px 80px;
+  position: relative;
+  margin-top: 300px;
+}
 
+.about h3 {
+  font-weight: bolder;
+  margin-top: 20px;
+}
 
+.footer-alamat {
+  display: flex;
+  flex-direction: row;
+  gap: 70px;
+  color: white;
+}
+
+.kantorPusat {
+  width: 50%;
+}
+
+.tentangJTE,
+
+P{
+  line-height: 20px;
+}
+
+.JteProf {
+  text-decoration: none; /* Menghilangkan underline */
+  color: #ffffff; /* Warna teks normal */
+  transition: color 0.3s ease; /* Transisi perubahan warna teks */
+}
+
+.JteProf:hover {
+  color: black; /* Warna teks saat hover */
+}
+
+.services {
+  width: 20%;
+}
+
+.sosmed ul{
+  float: right;
+  justify-content: space-between;
+  margin: -15px 10px 0;
+}
+
+.sosmed ul a{
+  display: grid;
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  color: #c1121f;
+  border-radius: 50%;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  }
+
+.sosmed a:hover{
+  color: #000;
+}
+
+.footer {
+  display: flex;
+  margin: 0px 50px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer p {
+  color: #c1121f;
+}
   
+@media (max-width: 600px) {
+  .footer p{
+    padding: 20px 0px;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .footer-alamat {
+    flex-direction: column;
+  }
+}
