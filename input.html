@@ -75,15 +75,15 @@
     <div class="container-us">
             <form>
                 <h1>Input Barang</h1>
-                <input name="Id" type="text" placeholder="No.Id">
-                <input name="name" type="text" placeholder="Nama Pengirim">
-                <input name="email" type="email" placeholder="Email Pengirim">
-                <input name="address" type="email" placeholder="Alamat Pengirim">
-                <input name="name" type="text" placeholder="Nama Penerima">
-                <input name="email" type="email" placeholder="Email Penerima">
-                <input name="address" type="email" placeholder="Alamat Penerima">
-                <textarea name="massage" placeholder="Your Massage" rows="Your Message"></textarea>
-                <button type="submit" onclick="myButton()">Send</button>
+                <!-- <input id="id" name="Id" type="text" placeholder="No.Id"> -->
+                <input id="nama_pengirim" name="name" type="text" placeholder="Nama Pengirim">
+                <input id="email_pengirim" name="email" type="email" placeholder="Email Pengirim">
+                <input id="address_pengirim" name="address" type="text" placeholder="Alamat Pengirim">
+                <input id="nama_penerima" name="name" type="text" placeholder="Nama Penerima">
+                <input id="email_penerima" name="email" type="email" placeholder="Email Penerima">
+                <input id="address_penerima" name="address" type="text" placeholder="Alamat Penerima">
+                <textarea id="pesan" name="massage" placeholder="Your Massage" rows="Your Message"></textarea>
+                <button type="submit" onclick="InputData(event)">Send</button>
             </form>
         </div>
     </div>

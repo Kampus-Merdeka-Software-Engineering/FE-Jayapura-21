@@ -420,4 +420,18 @@ form label {
   }
 }
 
+@media (max-width: 600px) {
+  .footer p{
+    padding: 20px 0px;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .footer-alamat {
+    flex-direction: column;
+  }
+}
+
+
   

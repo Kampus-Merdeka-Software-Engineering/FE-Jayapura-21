@@ -1,0 +1,29 @@
+#content-resi {
+    margin: auto;
+}
+
+table {
+    margin: auto;
+}
+
+table h2 {
+    margin-top: 5%;
+    align-items: center;
+}
+
+h2 {
+    margin: 5px;
+}
+
+.usertbl tr, th, td{
+    border: 1px solid;
+    margin: 5px;
+}
+
+tr, th, td {
+    margin: 5px;
+}
+
+td {
+    align-items: first baseline;
+}
