@@ -251,6 +251,7 @@ header nav ul:hover {
     text-align: center;
   }
   .about-us .vm{
+    justify-content: center;
     top: 5cm;
     left: 75px;
     width: 90%;
