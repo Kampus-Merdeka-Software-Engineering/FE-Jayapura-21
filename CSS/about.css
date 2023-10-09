@@ -337,9 +337,18 @@ header nav ul:hover {
    font-weight: bolder;
     padding: 20px 0px 20px 0px;
   }
-
+  .card p{
+    font-size: 15px;
+    
+    
+  }
   .card a {
     font-size: 0.4cm;
+    text-decoration: none;
+    color: black;
+  }
+  .card a :hover{
+    color: #cf1321;
   }
 
  /*responsive navbar*/
