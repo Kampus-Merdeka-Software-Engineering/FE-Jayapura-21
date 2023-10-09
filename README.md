@@ -9,7 +9,7 @@ Para pendiri JTExpress merupakan mahasiswa dan mahasiswi dari universitas yang b
 </div>
 
 <div>
-  <h2 align>Fitur Utama</h2>
+  <h2 >Fitur Utama</h2>
   <h3>1. Home</h3>
 Merupakan fitur untuk mengarahkan <i>user</i> ke halaman utama pada website JTExpress
   <h3>2. Input</h3>
@@ -20,7 +20,7 @@ Merupakan fitur yang berisi mengenai informasi terbentuknya JTExpress, dimana te
 Merupakan fitur yang disediakan untuk <i>user</i> bisa melakukan pengecekan secara pribadi apakah paket yang dikirimkan telah diterima oleh pihak JTExpress
 </div>
 <div>
-  <h2 align>Fitur Tambahan</h2>
+  <h2 >Fitur Tambahan</h2>
   <h3>1. Shipping Rate</h3>
 Merupakan fitur yang bisa digunakan oleh <i>user</i> untuk melakuakn cek harga terhadap paket yang ingin dikirimkan
   <h3>2. Pelayanan</h3>
@@ -28,7 +28,7 @@ Merupakan fitur yang berisi informasi terkait layanan apa saja yang disediakan o
 (fitur ini dapat dilihat pada bagian <i>home page</i> website)
 
 <div>
-  <h2 align>Teknologi</h2>
+  <h2 >Teknologi</h2>
 - Frontend = Visual Studio Code (HTML, CSS, JavaScript)
 - Backend = Node.js, Express.js [JavaScript]
 - Database = MySQL
@@ -36,7 +36,7 @@ Merupakan fitur yang berisi informasi terkait layanan apa saja yang disediakan o
 
 <div>
   <h2 align>Akses (?)</h2>
-Just click <a href="https://kampus-merdeka-software-engineering.github.io/FE-Jayapura-21/"><b>me</b></a>okay 🤗
+Just click <a href="https://kampus-merdeka-software-engineering.github.io/FE-Jayapura-21/"><b>me</b></a> okay 🤗
 <br>
 <a>
 </div>
