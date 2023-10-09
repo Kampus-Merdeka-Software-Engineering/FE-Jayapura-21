@@ -16,7 +16,7 @@ toggle.onclick = function () {
   navigation.classList.toggle('active');
 }
 
-const BASE_URL = 'http://localhost:3000'
+const BASE_URL = 'https://be-jayapura-21-production.up.railway.app'
 
 function InputData(event) {
   event.preventDefault();
