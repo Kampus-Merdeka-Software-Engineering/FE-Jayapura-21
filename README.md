@@ -16,7 +16,7 @@ Merupakan fitur untuk mengarahkan <i>user</i> ke halaman utama pada website JTEx
 Merupakan fitur yang disediakan jika <i>user</i> ingin melakukan pengiriman barang atau dokumen tanpa harus ke <i>drop shipp</i> JTExpress
   <h3>3. Tentang Kami</h3>
 Merupakan fitur yang berisi mengenai informasi terbentuknya JTExpress, dimana terdapat sejarah, visi-misi, serta deretan nama pengusung dan pembangun JTExpress
-  <h3>4. Cek Resi</h3>
+  <h3>4. Tracking</h3>
 Merupakan fitur yang disediakan untuk <i>user</i> bisa melakukan pengecekan secara pribadi apakah paket yang dikirimkan telah diterima oleh pihak JTExpress
 </div>
 <div>
@@ -26,3 +26,17 @@ Merupakan fitur yang bisa digunakan oleh <i>user</i> untuk melakuakn cek harga t
   <h3>2. Pelayanan</h3>
 Merupakan fitur yang berisi informasi terkait layanan apa saja yang disediakan oleh JTExpress
 (fitur ini dapat dilihat pada bagian <i>home page</i> website)
+
+<div>
+  <h2 align>Teknologi</h2>
+- Frontend = Visual Studio Code (HTML, CSS, JavaScript)
+- Backend = Node.js, Express.js [JavaScript]
+- Database = MySQL
+</div>
+
+<div>
+  <h2 align>Akses (?)</h2>
+Just click <a href="https://kampus-merdeka-software-engineering.github.io/FE-Jayapura-21/"><b>me</b></a>okay 🤗
+<br>
+<a>
+</div>
