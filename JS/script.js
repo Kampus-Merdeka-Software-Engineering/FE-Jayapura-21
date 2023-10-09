@@ -29,7 +29,7 @@ function InputData(event) {
   const AlamatPenerima = document.querySelector("#address_penerima");
   const YourMessage = document.querySelector("#pesan");
 
-  fetch(`${BASE_URL}/Tracking`, {
+  fetch(`${BASE_URL}/InputBarang`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
