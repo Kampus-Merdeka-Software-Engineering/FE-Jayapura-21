@@ -30,7 +30,9 @@ Merupakan fitur yang berisi informasi terkait layanan apa saja yang disediakan o
 <div>
   <h2 >Teknologi</h2>
 - Frontend = Visual Studio Code (HTML, CSS, JavaScript)
+<br>
 - Backend = Node.js, Express.js [JavaScript]
+<br>
 - Database = MySQL
 </div>
 
