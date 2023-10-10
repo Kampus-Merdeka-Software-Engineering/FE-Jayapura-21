@@ -92,6 +92,26 @@ header nav ul:hover {
   height: 80px;
 }
 
+.text_overlay-home {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  color: rgb(0, 0, 0);
+  padding: 5px 75px;
+  font-size: 20px;
+  backdrop-filter: blur(2.5px);
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.text_overlay-home b{
+  font-size: 35px;
+}
+
+.text_overlay-home p{
+  font-size: 1.4vw;
+  margin-top: 10px;
+}
+
 /* CSS default */
 .excess {
   background-image: url(assets/background-bawah.png);
@@ -330,15 +350,8 @@ P {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* margin-top: 33px auto; */
-  width: 100%; 
-  height: auto; 
+  width: 100%;
 }
-
-/* .container_tracking {
-  position: relative;
-  display: inline-block;
-} */
 
 .text_overlay {
   position: absolute;
@@ -361,8 +374,8 @@ P {
   justify-content: center;
   align-items: center;
   margin-top: 70px;
-  width: 100%; /* Lebar gambar 50% dari container */
-  height: auto; /* Tinggi gambar disesuaikan secara otomatis agar menjaga aspek rasio */
+  width: 100%;
+  height: auto; 
 }
 
 .tracking_check input {
@@ -507,12 +520,21 @@ P {
     font-size: 2.5vw; 
     top: 25%;
   }
+
+  .text_overlay-home{
+    font-size: 2.5vw; 
+    top: 25%;
+  }
 }
 
 @media (max-width: 498px) {
+  .container_tracking{
+    min-height: 300px;
+  }
+  
   .text_overlay {
     font-size: 2.5vw; 
-    top: 20%;
+    top: 30%;
   }
 
   .tracking_check input{
